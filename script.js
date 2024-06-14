@@ -11,14 +11,23 @@ function letsgo() {
     .then((data) => {
       // Assuming 'submission' is a property of the returned 'data' object
       const submission = data.recentSubmissions;
-      let impdata = submission.map((each) => each.title);
+      let impdata = submission.map((each) => each.titleSlug);
       console.log(impdata);
 
+      // Removing duplicates
+
+      let finalData = [];
+      impdata.forEach(function(ele){
+        if(!finalData.includes(ele)){
+          finalData.push(ele);
+        }
+      })
+      
       // Create and append the list items inside this block
       let list = document.getElementById("add");
-      for (let i = 0; i < impdata.length && i < 20; i++) {
+      for (let i = 0; i < finalData.length && i < 20; i++) {
         let li = document.createElement("li");
-        li.textContent = impdata[i];
+        li.innerHTML = `<a href="https://leetcode.com/problems/${finalData[i]}/description/">${finalData[i]}</a>`; // appending links
         list.append(li);
       }
     })
