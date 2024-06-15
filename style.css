@@ -359,3 +359,6 @@ li {
   padding: 10px;
   font-size: 20px;
 }
+.label {
+  font-family: monospace !important;
+}
