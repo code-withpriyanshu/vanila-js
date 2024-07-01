@@ -358,6 +358,16 @@ ul {
 li {
   padding: 10px;
   font-size: 20px;
+  text-decoration: none;
+  margin: 10px;
+  background-color: rgb(66, 185, 66);
+  border-radius: 10px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-family: system-ui;
+  font-size: 1.2rem;
 }
 .label {
   font-family: monospace !important;
