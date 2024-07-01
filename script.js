@@ -17,12 +17,12 @@ function letsgo() {
       // Removing duplicates
 
       let finalData = [];
-      impdata.forEach(function(ele){
-        if(!finalData.includes(ele)){
+      impdata.forEach(function (ele) {
+        if (!finalData.includes(ele)) {
           finalData.push(ele);
         }
-      })
-      
+      });
+
       // Create and append the list items inside this block
       let list = document.getElementById("add");
       for (let i = 0; i < finalData.length && i < 20; i++) {
