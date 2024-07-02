@@ -9,13 +9,7 @@ function letsgo() {
           </video>`;
     list.append(warning);
   } 
-  else if (username === "codermal_") {
-    let warning = document.createElement("warning");
-    warning.innerHTML = `<video autoplay controls width = "800">
-              <source src="Untitled video - Made with Clipchamp (4).mp4">
-          </video>`;
-    list.append(warning);
-  } else if
+  else if
   (username === "mukulkrit14") {
     let warning = document.createElement("warning");
     warning.innerHTML = `<video autoplay controls width = "400">
