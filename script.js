@@ -2,15 +2,22 @@ function letsgo() {
   let username = document.getElementById("input").value;
   let list = document.getElementById("add");
   list.innerHTML = "";
-  if (username === "nooneknowss" ) {
+  if (username === "nooneknowss") {
     let warning = document.createElement("warning");
     warning.innerHTML = `<video autoplay controls width = "400">
               <source src="WhatsApp Video 2024-06-23 at 17.11.52_1fc0f8e8.mp4" type="video/mp4">
           </video>`;
     list.append(warning);
-  } 
-  else if
-  (username === "mukulkrit14") {
+  }
+
+  if (username === "codermal_") {
+    let warning = document.createElement("warning");
+    warning.innerHTML = `<video autoplay controls width = "400">
+              <source src="Untitled video - Made with Clipchamp (4).mp4" type="video/mp4">
+          </video>`;
+    list.append(warning);
+    
+  } else if (username === "mukulkrit14") {
     let warning = document.createElement("warning");
     warning.innerHTML = `<video autoplay controls width = "400">
               <source src="ias.mp4">
